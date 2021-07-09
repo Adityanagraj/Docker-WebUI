@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-image:url("baidu-builds-an-ai-ecosystem-li-post.jpg");
+    background-color: rgba(64, 134, 145, 0.68);
+}
+.content{
+	position: absolute;
+	top:-8%;
+        left:80%;
+}
+.docker{
+    position: absolute;
+    width:550px;
+    height:450px;
+    left:20%;
+    top:50%;
+    border:1px solid black;
+    transform: translate(-48%,-40%);
+    border-left:5px solid black;
+box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.699);
+}
+
+.upper{
+    height:40%;
+    width:80%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    /* border:2px solid black; */
+    transform: translate(-50%,-50%);
+    padding:20px;
+}
+
+input,label{
+    width:100%;
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 5px;
+}
+input{
+	padding-left: 10px;
+	margin: 15px 0px;
+	background-color: transparent;
+	border: none;
+        border-bottom:1px solid aliceblue;
+	color: white;
+}
+img{
+	margin:0 10%;
+}
+img:hover{
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.049);
+	margin:0 2%;
+}
+#btn{
+	width:105%;
+	border:1px solid aliceblue;
+	border-radius:5px;color: black;
+
+}
+#btn:hover{
+	background-color: aliceblue;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.799);
+	cursor: pointer;
+}
+h1{
+	text-align: center;
+	margin-top: 50px;
+}
+#output,#outputlbl{
+    position: absolute;
+    width:500px;
+    height:450px;
+    left:30%;
+    top:5%;
+    color: white;
+    
+}
+#output{
+    padding: 20px;
+    width:700px;
+    height:500px;
+    left:42%;
+    top:19%;
+    color: white;
+    background-color: black;
+    overflow-y:auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.799);
+}
+
+h2{
+    margin: 0;
+    line-height: 4em;
+    color: #4a36e4;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+label{
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+}
+.div{
+    width:50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.599);
+    margin:  0 auto;
+    padding: 25px;
+    background-color: #fff;
+    font-size: 2em;
+}
+p, .content > div{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    margin:  0;
+    padding: 25px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+

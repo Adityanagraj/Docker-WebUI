@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Docker CGI commands</title>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+<body>
+    <div class="content">
+        <h2>VK Website</h2>
+    </div>
+    <div class="docker">
+        <h1>Docker Commands</h1>
+        <div class="upper">
+            <h3 >Type Command</h3>
+            <input type="text" id="cmd" name="cmd" required><br>
+            <input type="button" onclick="runcmd()" value="Run" id="btn"><br/>
+	    <img src="docker_logo.png" id="docker" alt="docker" height=100 />
+        </div>
+    </div>
+	<h1 id="outputlbl">Output</h1>
+	<pre><dev id="output">[root@localhost ~] </dev></pre>
+
+</body>
+</html>
+
+<script>
+	function runcmd()
+	{
+		var i = document.getElementById("cmd").value;
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET","http://10.0.2.15/cgi-bin/py.py?x=" + i,true);
+		xhr.send();
+		// Output from above url
+		xhr.onload = function()
+		{
+			var output = xhr.responseText;
+			document.getElementById("output").innerHTML = "[root@localhost ~] "+ i +"\n"+output;
+		}
+	}
+</script>
+
